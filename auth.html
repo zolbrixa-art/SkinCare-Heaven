@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up - Skincare Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-body">
+    <main class="auth-shell">
+        <section class="auth-visual">
+            <div class="auth-brand-mark">SKINCARE HEAVEN</div>
+            <div class="auth-visual-copy">
+                <p class="eyebrow">YOUR DAILY RITUAL</p>
+                <h1>Healthy skin<br><em>starts here.</em></h1>
+                <p>Thoughtfully chosen essentials for a softer, brighter, more confident you.</p>
+            </div>
+        </section>
+        <section class="auth-panel">
+            <div class="auth-panel-top">
+                <a class="auth-logo" href="/">SH</a>
+            </div>
+            <div class="auth-content">
+                <p class="eyebrow">WELCOME</p>
+                <h2 id="auth-heading">Welcome back</h2>
+                <p class="auth-intro">Sign in to continue your skincare journey.</p>
+                <div class="auth-switcher" role="tablist">
+                    <button type="button" class="auth-tab active" data-auth-tab="login">Log in</button>
+                    <button type="button" class="auth-tab" data-auth-tab="signup">Create account</button>
+                </div>
+                <form id="login-form" class="auth-form">
+                    <div class="auth-field"><label for="login-email">Email address</label><input id="login-email" type="email" placeholder="you@example.com" required></div>
+                    <div class="auth-field password-field"><label for="login-password">Password</label><input id="login-password" type="password" placeholder="Enter your password" required><button class="password-toggle" type="button" data-password-target="login-password" aria-label="Show password">◉</button></div>
+                    <button class="auth-submit" type="submit">Continue <span>→</span></button>
+                </form>
+                <form id="signup-form" class="auth-form is-hidden">
+                    <div class="auth-field"><label for="signup-name">Full name</label><input id="signup-name" placeholder="Your name" required></div>
+                    <div class="auth-field"><label for="signup-email">Email address</label><input id="signup-email" type="email" placeholder="you@example.com" required></div>
+                    <div class="auth-field password-field"><label for="signup-password">Password</label><input id="signup-password" type="password" minlength="6" placeholder="At least 6 characters" required><button class="password-toggle" type="button" data-password-target="signup-password" aria-label="Show password">◉</button></div>
+                    <button class="auth-submit" type="submit">Create account <span>→</span></button>
+                </form>
+                <p id="auth-message" class="auth-message"></p>
+                <p class="auth-note">By continuing, you agree to our terms and privacy policy.</p>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

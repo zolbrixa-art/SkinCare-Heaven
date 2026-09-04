@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - Skincare Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-body">
+    <main class="admin-shell">
+        <section id="admin-dashboard" class="is-hidden" data-admin-view="home">
+            <header class="admin-header">
+                <a class="admin-brand" href="admin.html">SH <span>SKINCARE HEAVEN</span></a>
+                <nav class="admin-nav">
+                    <a class="active" href="admin.html">Home</a><a href="admin-products.html">Manage Products</a><a href="admin-orders.html">Recent Orders</a><a href="admin-feedback.html">Community Feedback</a><a href="admin-users.html">Users</a>
+                </nav>
+                <button id="admin-logout" class="outline-button">Logout</button>
+            </header>
+            <section class="admin-welcome"><div class="admin-welcome-copy"><p class="eyebrow">SKINCARE HEAVEN</p><h1>Welcome, Admin.</h1><p>Keep your skincare store organised from one place. Manage your catalog, review incoming orders, and stay close to your community.</p><div class="admin-stats"><a href="admin-products.html"><strong id="admin-product-stat">0</strong><span>Products</span></a><a href="admin-orders.html"><strong id="admin-order-stat">0</strong><span>Recent orders</span></a><a href="admin-feedback.html"><strong id="admin-feedback-stat">0</strong><span>Feedback messages</span></a><a href="admin-users.html"><strong id="admin-user-stat">0</strong><span>Registered users</span></a></div><div class="admin-home-links"><a href="admin-products.html">Manage products <span>→</span></a><a href="admin-orders.html">View orders <span>→</span></a><a href="admin-feedback.html">Read feedback <span>→</span></a></div></div><div class="admin-welcome-visual"><img src="images/345.jfif" alt="Skincare products"><span>STORE<br>OVERVIEW</span></div></section>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

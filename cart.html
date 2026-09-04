@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="inner-header">
+        <a class="site-logo" href="index.html"><span>SH</span> SKINCARE HEAVEN</a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="categories.html">Categories</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-cart active" href="cart.html">Cart <span>→</span></a>
+            <button class="logout-button" type="button">Logout</button>
+        </nav>
+    </header>
+
+    <main class="cart-page">
+        <p class="eyebrow">YOUR SELECTION</p>
+        <h1>Your Cart</h1>
+        <ul id="cart-list"></ul>
+        <div id="cart-summary">
+            <p id="total-price">Total: Rs. 0</p>
+            <button id="checkout-button">Proceed Now <span>→</span></button>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

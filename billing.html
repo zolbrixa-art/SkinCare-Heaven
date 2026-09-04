@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - Skincare Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="inner-header">
+        <a class="site-logo" href="index.html"><span>SH</span> SKINCARE HEAVEN</a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="categories.html">Categories</a>
+            <a class="active" href="billing.html">Billing</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-cart" href="cart.html">Cart <span>→</span></a>
+            <button class="logout-button" type="button">Logout</button>
+        </nav>
+    </header>
+    <h1 class="page-title">Checkout</h1>
+
+    <main>
+        <div class="billing-container">
+            <section class="billing-form">
+                <h2>Enter Your Details</h2>
+                <form id="billing-details">
+                    <div class="form-group">
+                        <label for="username">Name:</label>
+                        <input type="text" id="username" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-method">Payment method:</label>
+                        <select id="payment-method" name="payment_method" required>
+                            <option value="">Select payment method</option>
+                            <option>Cash on Delivery</option>
+                            <option>Bank Transfer</option>
+                            <option>EasyPaisa / JazzCash</option>
+                        </select>
+                    </div>
+                </form>
+            </section>
+
+            <section class="cart-section">
+                <h2>Your Cart</h2>
+                <div class="cart-container">
+                    <table id="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Cart items will be added here dynamically -->
+                        </tbody>
+                    </table>
+                    <div class="cart-total">
+                        <p><strong>Total Amount: Rs. </strong><span id="total-amount">0</span></p>
+                        <button id="buy-now" class="buy-now-btn">Buy Now &amp; Download Slip</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Skincare Website | All Rights Reserved</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
